@@ -4,12 +4,16 @@
   "version": "1.0.0",
   "description": "A Chrome extension to assist with DichVuCong website",
   "permissions": ["activeTab", "scripting", "tabs"],
-  "action": {
-    "default_popup": "index.html"
+  "options_ui": {
+    "page": "index.html",
+    "open_in_tab": true
   },
   "host_permissions": ["*://*/*"],
   "background": {
     "service_worker": "background.js"
-  }
-
+  },
+  "action": {
+    "default_title": "Tu dong hoa cong viec nham chan vi gia dinh"
+  },
+  "incognito": "split"
 }
